@@ -3,6 +3,7 @@ using System;
 // Vista: se encarga de la interacción con el usuario
 public class VistaUsuario
 {
+    // Método para registrar un nuevo usuario, solicitando y leyendo la información del usuario desde la consola.
     public Usuario RegistrarUsuario()
     {
         Console.WriteLine("----- Registro de Usuario -----");
@@ -35,6 +36,7 @@ public class VistaUsuario
         };
     }
 
+    // Método para iniciar sesión, solicitando y leyendo el correo electrónico del usuario desde la consola.
     public string IniciarSesion()
     {
         Console.WriteLine("----- Inicio de Sesión -----");
@@ -47,6 +49,7 @@ public class VistaUsuario
         return correo;
     }
 
+    // Método para mostrar mensajes al usuario en la consola.
     public void MostrarMensaje(string mensaje)
     {
         Console.WriteLine(mensaje);
